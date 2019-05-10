@@ -20,19 +20,12 @@
 ## 安装
 在你的`pubspec.yaml`文件的dependencies节点下添加:
 ```
-amap_base: x.x.x
-amap_base_map: x.x.x # 仅地图
-amap_base_navi: x.x.x # 仅导航(高德导航SDK已包含地图, 不要跟amap_base_map重复引用)
-amap_base_search: x.x.x # 仅搜索
-amap_base_location: x.x.x # 仅定位
+
+amap_base_map: 
+ git: https://github.com/boomcx/amap_map.git
+
 ```
-如果你想要指定某个版本/分支/提交, 那么:
-```
-amap_base:
-  git:
-    url: https://github.com/yohom/amap_base_flutter.git
-    ref: 0.0.1/branch/commit
-```
+
 **Android项目默认集成了androidx, 如果要使用android-support库的话, 使用android-support-library分支!**
 使用方法:
 ```

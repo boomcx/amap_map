@@ -1,5 +1,6 @@
 # 高德地图Flutter插件 基于AndroidView和UiKitView
 
+
 |      amap_base     | [![pub package](https://img.shields.io/pub/v/amap_base.svg)](https://pub.Flutter-io.cn/packages/amap_base)                   |
 |:------------------:|:----------------------------------------------------------------------------------------------------------------------------:|
 |    amap_base_map   | [![pub package](https://img.shields.io/pub/v/amap_base_map.svg)](https://pub.Flutter-io.cn/packages/amap_base_map)           |
@@ -8,6 +9,13 @@
 |   amap_base_navi   | [![pub package](https://img.shields.io/pub/v/amap_base_navi.svg)](https://pub.Flutter-io.cn/packages/amap_base_navi)         |
 
 [TOC]
+
+
+## iOS
+编译失败找不到头文件。 Xcode打开项目click Runner > Tagets > Runner > Build Settings>All, search Compile Sources As, change the value to Objective-C++
+
+## Android
+闪退。 项目运行路径文件 main.dart > Edit Configurations > Additional agruments  添加 --target-platform android-arm
 
 ## 安装
 在你的`pubspec.yaml`文件的dependencies节点下添加:
